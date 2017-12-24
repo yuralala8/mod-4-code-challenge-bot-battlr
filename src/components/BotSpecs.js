@@ -5,7 +5,7 @@ const BotSpecs = props => {
   let { bot, seeAll, enlist } = props;
 
   let botType;
-
+  console.log(props)
   switch (props.bot.bot_class) {
     case "Assault":
       botType = <i className="icon large circular military" />;

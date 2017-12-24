@@ -2,14 +2,12 @@ import React from "react";
 import BotCard from "../components/BotCard";
 
 const YourBotArmy = props => {
-  //your bot army code here...
-
+  console.log("YOUR BOT ARMY", props)
   return (
     <div className="ui segment inverted olive bot-army">
       <div className="ui five column grid">
         <div className="row bot-army-row">
-          {/*...and here...*/}
-          Your Bot Army
+          {props.enlistedBots.map(bot => <BotCard bot={bot.bot}/>)}
         </div>
       </div>
     </div>
